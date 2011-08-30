@@ -1,0 +1,27 @@
+# Install
+
+for Unix-like(Mac, Linux):
+
+    $ cd ~
+    $ mkdir .tmp .undodir
+    $ touch .vim_mru_files
+    $ git clone git@github.com:hotoo/vimrc.git .vim
+    $ cp .vim/.sysrc_sample.vim ./.sysrc.vim
+    $ vi .sysrc.vim
+    $ cp .vim/.vimrc_sample ./.vimrc
+
+for Windows:
+
+    $ cd "C:\Program Files\Vim"
+    $ mkdir tmp undodir
+    $ copy NUL _vim_mru_files
+    $ rmdir /s /q vimfiles
+    $ git clone git@github.com:vimcn/vimrc.sample.git vimfiles
+    $ copy vimfiles\.sysrc_sample.vim sysrc.vim
+    $ vi vimfiles/sysrc.vim
+    $ del _vimrc
+    $ copy vimfiles\_vimrc_sample _vimrc
+
+*注意：*
+- vim73 目录请以你的 Vim 实际版本为准。
+- for Windows 的 "C:\Program Files\Vim" 是你的 Vim 实际安装目录。
